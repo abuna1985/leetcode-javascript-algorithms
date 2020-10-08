@@ -1,5 +1,11 @@
 # Two Sum 
 
+## Testing
+
+In the root folder, run the bash command `npm run twoSum:solved`. 4 tests will run and you will get a message all tests passed.
+
+## Solution
+
 I specifically remember doing the two and three sum at a algorithm solving meetup. But for the life of me, I could not remember the solution. I originally remember using pointers, but all I could come up with was the following:
 
 ```javascript
