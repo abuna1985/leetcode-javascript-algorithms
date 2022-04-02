@@ -1,24 +1,27 @@
 {
-  "name": "leetcode-javascript-algorithms",
-  "version": "1.0.0",
-  "description": "Solutions to javascript leetcode algorithms with simple tests",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "twoSum:solved": "node ./twoSum/twoSum.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abuna1985/leetcode-javascript-algorithms.git"
-  },
-  "keywords": [
-    "algorithm",
-    "javascript"
-  ],
-  "author": "Adam Abundis",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/abuna1985/leetcode-javascript-algorithms/issues"
-  },
-  "homepage": "https://github.com/abuna1985/leetcode-javascript-algorithms#readme"
+	"name": "leetcode-javascript-algorithms",
+	"version": "1.0.0",
+	"description": "Solutions to javascript leetcode algorithms with simple tests",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"solved:two-sum": "jest --verbose ./two-sum"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/abuna1985/leetcode-javascript-algorithms.git"
+	},
+	"keywords": [
+		"algorithm",
+		"javascript"
+	],
+	"author": "Adam Abundis",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/abuna1985/leetcode-javascript-algorithms/issues"
+	},
+	"homepage": "https://github.com/abuna1985/leetcode-javascript-algorithms#readme",
+	"devDependencies": {
+		"jest": "^27.5.1"
+	}
 }
