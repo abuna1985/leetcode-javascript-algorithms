@@ -1,5 +1,5 @@
 // Problem
-//leetcode.com/problems/two-sum/submissions/
+//https://leetcode.com/problems/two-sum/submissions/
 
 //Solution
 // https://leetcode.com/submissions/detail/680521245/
@@ -9,7 +9,7 @@
  * @param {Number} target
  * @return {Array}
  */
-https: function twoSum(nums = [], target) {
+function twoSum(nums = [], target) {
 	if (!Array.isArray(nums))
 		throw new Error(
 			`You must provide an array for nums. You provided: ${nums}`
