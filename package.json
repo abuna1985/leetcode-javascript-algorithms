@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "jest",
-		"test:two-sum": "jest --verbose ./two-sum",
-		"test:pal-num": "jest --verbose ./palindrome-number"
+		"test:two-sum": "jest --verbose ./1-two-sum",
+		"test:pal-num": "jest --verbose ./2-palindrome-number"
 	},
 	"repository": {
 		"type": "git",
