@@ -1,28 +1,36 @@
 // Problem
 //leetcode.com/problems/two-sum/submissions/
 
+//Solution
+// https://leetcode.com/submissions/detail/680521245/
+
 /**
  * @param {Array} nums
  * @param {Number} target
  * @return {Array}
  */
-var twoSum = function(nums, target) {
-  // create an empty Set
-  let numObj = {}
-  // Another ride on the loops
-  for (let i = 0; i < nums.length; i++) {
-		// store the current number as variable
+https: function twoSum(nums = [], target) {
+	if (!Array.isArray(nums))
+		throw new Error(
+			`You must provide an array for nums. You provided: ${nums}`
+		);
+	if (nums.length < 2) return [];
+
+	let numsObject = {};
+	for (let i = 0; i < nums.length; i++) {
 		let currentNum = nums[i];
-		// This time we will get the difference between the current number and the target. Store it in the variable diff
-		let diff = target - nums[i];
-		// Check if the diff exist in the number Object key and the index value is not the same as the current index
-		if (numObj.hasOwnProperty(diff) && numObj[diff] !== i) {
-			// If true, return  number object value current index 
-			return [numObj[diff], i];
+		let diffBetweenTarget = target - nums[i];
+		if (
+			numsObject.hasOwnProperty(diffBetweenTarget) &&
+			numsObject[diffBetweenTarget] !== i
+		) {
+			// If true, return an array with the 2 indexes which values match the target variable
+			return [numsObject[diffBetweenTarget], i];
 		}
-		// add the current number as a key and the index as the value
-		numObj[currentNum] = i;
+		numsObject[currentNum] = i;
 	}
+
+	return [];
 };
 
 module.exports = twoSum;
