@@ -10,10 +10,7 @@
  * @return {Array}
  */
 function twoSum(nums = [], target) {
-	if (!Array.isArray(nums))
-		throw new Error(
-			`You must provide an array for nums. You provided: ${nums}`
-		);
+	if (!Array.isArray(nums)) throw new Error(`You must provide an array for nums. You provided: ${nums}`);
 	if (nums.length < 2) return [];
 
 	let numsObject = {};
