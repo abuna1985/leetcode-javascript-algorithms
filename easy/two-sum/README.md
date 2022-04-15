@@ -14,7 +14,7 @@
 
 ## Testing
 
-In the root folder, run the bash command `npm run solved two-sum`. 4 tests will run and you will get a message all tests passed.
+In the root folder, run the bash command `npm run test:two-sum`. 7 tests will run and you will get a message in your terminal that all tests have passed.
 
 ## Solution
 
