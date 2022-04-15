@@ -12,7 +12,7 @@
 
 ## Testing
 
-In the root folder, run the bash command `npm run test:pal-num`. 6 tests will run and you will get a message all tests passed.
+In the root folder, run the bash command `npm run test:pal-num`. 7 tests will run and you will get a message in the terminal that all tests have passed.
 
 ## Solution
 
