@@ -1,5 +1,5 @@
 // Problem
-// https://leetcode.com/problems/contains-duplicate/submissions/
+// https://leetcode.com/problems/contains-duplicate/
 // Solution
 // https://leetcode.com/submissions/detail/671855566/
 

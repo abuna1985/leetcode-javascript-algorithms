@@ -1,5 +1,5 @@
 // Problem
-//https://leetcode.com/problems/two-sum/submissions/
+//https://leetcode.com/problems/two-sum/
 
 //Solution
 // https://leetcode.com/submissions/detail/680521245/

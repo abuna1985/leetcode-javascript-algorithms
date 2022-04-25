@@ -3,6 +3,7 @@
 ## Table of Contents
 - [Two Sum](#two-sum)
 	- [Table of Contents](#table-of-contents)
+	- [Problem](#problem)
 	- [Testing](#testing)
 	- [Solution](#solution)
 		- [First Attempt](#first-attempt)
@@ -11,6 +12,14 @@
 			- [Second Attempt Results](#second-attempt-results)
 		- [Third Attempt](#third-attempt)
 			- [Third Attempt Results](#third-attempt-results)
+
+## Problem
+
+[https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 ## Testing
 
@@ -45,7 +54,10 @@ var twoSum = function (nums, target) {
 |:------------:|:----------:|:-------:|:------------:|
 | Wrong Answer |    11/29   |  			  |    				   | 
 
-So...that kind of worked. But it did not work on the following example:
+
+**Big O Time Complexity**: N/A
+
+**NOTE:** So...that kind of worked. But it did not work on the following example:
 
 ```
 Input:[3,2,3], 6
@@ -78,15 +90,17 @@ var twoSum = function (nums, target) {
 
 |  Status  | Test Cases | Runtime | Memory Usage |   
 |:--------:|:----------:|:-------:|:------------:|
-| Accepted |    29/29   |  136 ms |    39.1 MB   |  
+| Accepted |    29/29   |  136 ms |    39.1 MB   | 
 
-Again, this is the brute force method. The Big O notation for this solution is 0(N)<sup>2</sup> (quadratic time complexity). Another way to say `quadratic` is the `rate of growth raising to the power of 2 (square)`. It's not great because running nested loops and the more I add to the numbers array, the more likely the potential that it is going to take.
+**Big O Time Complexity**: 0(n)<sup>2</sup> 
+
+**NOTE:** This is not an ideal solution because running nested loops and the more I add to the numbers array, the more likely the potential that it is going to take, especially if the solution is towards the end of the array.
 
 ### Third Attempt
 
 [Third Attempt Solution: https://leetcode.com/submissions/detail/673891372/](https://leetcode.com/submissions/detail/673891372/)
 
-I remember briefly talking to another attendee of the meetup that we need to ideally use a Obj map or object and refer to that rather than run 2 for loops. I had to refer to a [medium article on a Two Sum solution](https://medium.com/@paulrohan/solving-the-classic-two-sum-and-three-sum-problem-in-javascript-7d5d1d47db03) again for the Obj/object solution:
+I remember talking to another developer who said ideally to use store differences of the number and target in a  `Map` or `Object`. That was as you loop though the array, the function can keep track and stop once a solution is reached. I had to refer to a [medium article on a Two Sum solution](https://medium.com/@paulrohan/solving-the-classic-two-sum-and-three-sum-problem-in-javascript-7d5d1d47db03) again for the Obj/object solution:
 
 ```javascript
 /**
@@ -95,7 +109,7 @@ I remember briefly talking to another attendee of the meetup that we need to ide
  * @return {number[]}
  */
 var twoSum = function (nums, target) {
-	/ create an empty Set
+	/ create an empty Object
   let numObj = {}
   // Another ride on the loops
   for (let i = 0; i < nums.length; i++) {
@@ -118,6 +132,8 @@ var twoSum = function (nums, target) {
 
 |  Status  | Test Cases | Runtime | Memory Usage |   
 |:--------:|:----------:|:-------:|:------------:|
-| Accepted |    29/29   |   80 ms |    42.8 MB   |  
+| Accepted |    29/29   |   80 ms |    42.8 MB   | 
 
-This was almost twice as fast as the nested loop. We did add some memory usage by adding an object where we store the number values, but that isn't necessarily a bad thing. It just seems like a balance of adding memory to make the runtime more efficient.
+**Big O Time Complexity**: 0(n)
+
+**NOTE:** This was almost twice as fast as the nested loop. We did add some memory usage by adding an object where we store the number values, but that isn't necessarily a bad thing (as long you have the available space). It just seems like a balance of adding memory to make the runtime more efficient.
