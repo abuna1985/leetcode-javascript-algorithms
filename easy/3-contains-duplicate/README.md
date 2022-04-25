@@ -3,12 +3,20 @@
 ## Table of Contents
 - [Contains Duplicate](#contains-duplicate)
   - [Table of Contents](#table-of-contents)
+  - [Problem](#problem)
   - [Testing](#testing)
   - [Solution](#solution)
     - [First Attempt](#first-attempt)
       - [First Attempt Results](#first-attempt-results)
     - [Second Attempt](#second-attempt)
       - [Second Attempt Results](#second-attempt-results)
+
+
+## Problem
+
+[https://leetcode.com/problems/contains-duplicate/](https://leetcode.com/problems/contains-duplicate/)
+
+Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
 ## Testing
 
@@ -54,15 +62,14 @@ var containsDuplicate = function(nums) {
 |:------------:|:-----------:|:-------:|:------------:|
 | Accepted     |    70/70    |  153 ms |    49.9 MB   | 
 
-
-**Space Time Complexity**: 0(n)
+**Big O Time Complexity**: 0(n)
 
 
 ### Second Attempt
 
 Time: N/A
 
-**First Attempt Solution:**[https://leetcode.com/submissions/detail/562069664/](https://leetcode.com/submissions/detail/562069664/)
+**Second Attempt Solution:**[https://leetcode.com/submissions/detail/562069664/](https://leetcode.com/submissions/detail/562069664/)
 
 I wanted to see if there was another way to check for duplicates. I found this article on [Techie Delight - Check if an array contains duplicates in JavaScript](https://www.techiedelight.com/check-array-contains-duplicates-javascript/). I wanted to implement the new set solution.
 
@@ -85,6 +92,6 @@ var containsDuplicate = function(nums) {
 | Accepted     |    70/70    |   99ms  |    50.7 MB   | 
 
 
-**Space Time Complexity**: 0(n)
+**Big O Time Complexity**: 0(n)
 
 **NOTE:** Seems like both solutions have equal runtime, the second solution is just a bit more compact. It still seems to be iterating through the array to make the `Set`. But the performance seems to be more efficient with this approach.
