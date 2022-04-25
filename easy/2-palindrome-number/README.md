@@ -3,12 +3,20 @@
 ## Table of Contents
 - [Pailindrome Number](#pailindrome-number)
   - [Table of Contents](#table-of-contents)
+  - [Problem](#problem)
   - [Testing](#testing)
   - [Solution](#solution)
     - [First Attempt](#first-attempt)
       - [First Attempt Results](#first-attempt-results)
     - [Second Attempt](#second-attempt)
       - [Second Attempt Results](#second-attempt-results)
+
+
+## Problem
+
+[https://leetcode.com/problems/roman-to-integer/](https://leetcode.com/problems/roman-to-integer/)
+
+Given a roman numeral, convert it to an integer.
 
 ## Testing
 
@@ -42,7 +50,9 @@ var isPalindrome = function(x) {
 |:------------:|:-----------:|:-------:|:------------:|
 | Accepted     | 11510/11510 |  148 ms |    51.8 MB   | 
 
-So that obviously worked, but it didn't feel like the most efficient solution. There had to be some way to mathematically reverse the numbers.
+**Big O Time Complexity**: 0(n)
+
+**Note:** So that obviously worked, but it didn't feel like the most efficient solution. There had to be some way to mathematically reverse the numbers.
 
 ### Second Attempt
 
@@ -50,7 +60,7 @@ Time: 20 minutes
 
 [Second Attempt Solution: https://leetcode.com/submissions/detail/680538504/](https://leetcode.com/submissions/detail/680538504/)
 
-I attempted for 20 minutes with no luck. I found [Elisabéth dev.to article on Palindrome Number mathematical solution](https://dev.to/elisabethdiang/leetcode-palindrome-number-w-fun-javascript-mathematical-approach-1obi). 
+I attempted for 20 minutes with no luck. I found [Elisabéth - dev.to article on Palindrome Number mathematical solution](https://dev.to/elisabethdiang/leetcode-palindrome-number-w-fun-javascript-mathematical-approach-1obi). 
 
 ```js
 /**
@@ -80,6 +90,7 @@ var isPalindrome = function(x) {
 |  Status      | Test Cases  | Runtime | Memory Usage |   
 |:------------:|:-----------:|:-------:|:------------:|
 | Accepted     | 11510/11510 |  141 ms |    50.2 MB   | 
- 
 
-This seems to be a little more efficient and we can skip the string conversion steps. 
+**Big O Time Complexity**: 0(n)
+ 
+**Note:** This seems to be a little more efficient and we can skip the string conversion steps. We are still looping through the number and mathematically reversing it.

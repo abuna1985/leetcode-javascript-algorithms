@@ -1,6 +1,5 @@
 // Problem
-// https://leetcode.com/problems/palindrome-number/submissions/
-
+// https://leetcode.com/problems/palindrome-number/
 // Solution
 // https://leetcode.com/submissions/detail/680538504/
 /**
