@@ -17,4 +17,13 @@ I will using brute force with the example inputs and outputs. My goal is to get 
 
 ## Solutions
 
-1. [Two Sum - Easy](./easy/1-two-sum/)
+### Easy
+
+1. [Two Sum](./easy/1-two-sum/)
+2. [Palindrome Number](./easy/2-palindrome-number/)
+3. [Contains Duplicate](./easy/3-contains-duplicate/)
+4. [Roman to Integer](./easy/4-roman-to-integer/)
+
+
+## Acknowledgements
+
