@@ -4,7 +4,21 @@
 // https://leetcode.com/submissions/detail/671855566/
 
 
-https: var containsDuplicate = function (nums) {
+function containsDuplicate (nums) {
+	// Check for Array
+	if (!Array.isArray(nums)) {
+		throw new Error(
+			`You must provide an Array for nums. You provided: ${typeof nums}`
+		);
+	}
+	 
+	// Check for all elements being numbers
+	if (!nums.every(num => Number.isInteger(num))) {
+		throw new Error(
+			`All array elements be number values. You provided: ${nums}`
+		);
+	}
+
 	// store previous numbers in numSet
 	let numSet = new Set();
 	// run a loop
@@ -21,3 +35,5 @@ https: var containsDuplicate = function (nums) {
 	// if no duplicate is found, return false
 	return false;
 };
+
+module.exports = containsDuplicate;

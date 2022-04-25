@@ -6,7 +6,8 @@
 	"scripts": {
 		"test": "jest",
 		"test:two-sum": "jest --verbose ./1-two-sum",
-		"test:pal-num": "jest --verbose ./2-palindrome-number"
+		"test:pal-num": "jest --verbose ./2-palindrome-number",
+		"test:con-dup": "jest --verbose ./3-contains-duplicate"
 	},
 	"repository": {
 		"type": "git",
