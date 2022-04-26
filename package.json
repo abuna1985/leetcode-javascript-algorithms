@@ -8,7 +8,8 @@
 		"test:two-sum": "jest --verbose ./1-two-sum",
 		"test:pal-num": "jest --verbose ./2-palindrome-number",
 		"test:con-dup": "jest --verbose ./3-contains-duplicate",
-		"test:rom-to-int": "jest --verbose ./4-roman-to-integer"
+		"test:rom-to-int": "jest --verbose ./4-roman-to-integer",
+		"test:val-par": "jest --verbose ./5-valid-parentheses"
 	},
 	"repository": {
 		"type": "git",
