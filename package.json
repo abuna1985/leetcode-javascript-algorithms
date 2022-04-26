@@ -9,7 +9,8 @@
 		"test:pal-num": "jest --verbose ./2-palindrome-number",
 		"test:con-dup": "jest --verbose ./3-contains-duplicate",
 		"test:rom-to-int": "jest --verbose ./4-roman-to-integer",
-		"test:val-par": "jest --verbose ./5-valid-parentheses"
+		"test:val-par": "jest --verbose ./5-valid-parentheses",
+		"test:fiz-buz": "jest --verbose ./6-fizz-buzz"
 	},
 	"repository": {
 		"type": "git",
